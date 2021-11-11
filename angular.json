@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/Pre",
             "index": "src/index.html",
@@ -49,7 +49,7 @@
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.developer.ts"
+                  "with": "src/environments/environment.dev.ts"
                 }
               ],
               "outputHashing": "all"

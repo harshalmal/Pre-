@@ -48,4 +48,5 @@ Thumbs.db
 design.css
 content.html
 /general
-/src/environments/environment.dev.ts
+
+*.har
