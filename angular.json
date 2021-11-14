@@ -17,6 +17,13 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path": "./extra-webpack.config.ts",
+              "mergeRules": {
+                "plugins": "prepend"
+              }
+            },
+            "indexTransform": "./index-html-transform.js",
             "outputPath": "dist/Pre",
             "index": "src/index.html",
             "main": "src/main.ts",
